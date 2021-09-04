@@ -1,6 +1,5 @@
 import time
 import random
-import multiprocessing as mp
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
@@ -9,8 +8,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import NoSuchElementException as NSEE
 from selenium.webdriver.common.by import By
 
-#IMPORTANT! THIS VALUE CANNOT BE ABOVE YOUR CPU CORE COUNT (I HAVE 24, BUT MOST COMPUTERS HAVE 4)
-instances = 1
 windows = 1
 completed = 0
 check_delay = 1
